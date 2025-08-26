@@ -61,7 +61,7 @@ Developed a Python script to automate network monitoring tasks.
 
 For a detailed, day-by-day account of all tasks, challenges, and learning outcomes, please see the full internship report.
 
-➡️ **[View the Full Report (PDF)](report/CENG_summerInternshipReport.pdf)**
+➡️ **[View the Full Report (PDF)](Report/CENG_summerInternshipReport.pdf)**
 
 ---
 
