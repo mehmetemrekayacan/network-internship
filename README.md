@@ -38,7 +38,7 @@ I designed and implemented a complete virtual corporate network using VirtualBox
   - Deployed and configured a professional-grade firewall/router (OPNsense).
   - Created multiple, isolated network segments (`YONETIM`, `YAZILIM`, `DMZ`, `VERITABANI`) to simulate a secure corporate architecture.
   - Implemented inter-network routing and DHCP services for each segment.
-  - **See configuration details:** [`configs/opnsense-firewall-rules.md`](configs/opnsense-firewall-rules.md)
+  - **See configuration details:** [`configs/opnsense-firewall-rules.md`](Configs/opnsense-firewall-rules.md)
 
 ### 2. Physical Switch Configuration (HP ProCurve 2626)
 Gained hands-on experience with enterprise-grade network hardware.
@@ -46,14 +46,14 @@ Gained hands-on experience with enterprise-grade network hardware.
   - Connected to a managed switch via console port using PuTTY.
   - Implemented network segmentation using **VLANs**.
   - Configured **Trunk Ports** to carry multi-VLAN traffic.
-  - **See configuration details:** [`configs/hp2626-vlan-config.md`](configs/hp2626-vlan-config.md)
+  - **See configuration details:** [`configs/hp2626-vlan-config.md`](Configs/hp2626-vlan-config.md)
 
 ### 3. Network Automation Scripting
 Developed a Python script to automate network monitoring tasks.
 - **Learned Skills:**
   - Used Python libraries like `socket` to check the status of critical network services (HTTP, MySQL, SSH).
   - Automated `ping` tests to verify host reachability.
-  - **See the script:** [`scripts/network_monitor.py`](scripts/network_monitor.py)
+  - **See the script:** [`scripts/network_monitor.py`](Scripts/network_monitor.py)
 
 ---
 
