@@ -27,7 +27,6 @@ This repository is organized into the following directories:
 * `configs/`: Includes detailed configuration files for the hardware and software used in the lab.
 * `scripts/`: Contains a Python script for network and service monitoring automation.
 * `screenshots/`: Includes various screenshots from the lab environment for visual reference.
-
 ---
 
 ## 🔧 Key Projects and Skills Learned
