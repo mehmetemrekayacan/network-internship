@@ -1,4 +1,3 @@
-
 # HP ProCurve 2626 Switch Configuration File
 
 **Intern:** Mehmet Emre KAYACAN  
@@ -7,28 +6,22 @@
 
 ---
 
-This configuration was created for a **lab environment** to practice  
-network segmentation using **VLANs**.
+This configuration was created for a **lab environment** to practice network segmentation using **VLANs**.
 
 ---
 
-## Basic Setup
+## Configuration
+
 ```plaintext
+! --- Basic Setup ---
 hostname "SDU-IT-LAB-SW01"
 
----
+! --- VLAN Creation ---
+! VLAN 10: Software Department
+! VLAN 20: Management Department
+! VLAN 30: DMZ (public-facing servers)
+! VLAN 40: Database Department
 
-## VLAN Creation
-
-Four separate VLANs were created to logically isolate different
-network segments, mimicking a corporate network structure:
-
-* **VLAN 10** → Software Department (for developers)
-* **VLAN 20** → Management Department (for administrators)
-* **VLAN 30** → DMZ (for public-facing servers like the web server)
-* **VLAN 40** → Database Department (for secure backend servers)
-
-```plaintext
 vlan 10
    name "YAZILIM_DEPARTMANI"
    exit
@@ -41,16 +34,9 @@ vlan 30
 vlan 40
    name "VERITABANI_SUNUCULARI"
    exit
-```
 
----
-
-## Port Assignments (Access Ports)
-
-Untagged ports are assigned to a single VLAN. Devices connected
-to these ports (like PCs and servers) do not need to be VLAN-aware.
-
-```plaintext
+! --- Port Assignments (Access Ports) ---
+! Untagged ports assigned to a single VLAN
 vlan 10
    untagged 1-8
    exit
@@ -63,16 +49,9 @@ vlan 30
 vlan 40
    untagged 21-22
    exit
-```
 
----
-
-## Trunk Port Configuration
-
-A tagged port (trunk) can carry traffic for multiple VLANs simultaneously.
-Port **24** is configured as the trunk port to connect to the **OPNsense router**.
-
-```plaintext
+! --- Trunk Port Configuration ---
+! Port 24 as trunk for all VLANs
 vlan 10
    tagged 24
    exit
@@ -85,30 +64,10 @@ vlan 30
 vlan 40
    tagged 24
    exit
-```
 
----
-
-## Management and Security
-
-Enabling **SSH** for secure remote management.
-Telnet was disabled due to its lack of encryption.
-
-```plaintext
+! --- Management and Security ---
+! Enable SSH, disable Telnet
 ip ssh
-```
 
----
-
-## Notes
-
-* Don’t forget to **save the configuration** with:
-
-  ```plaintext
-  write memory
-  ```
-* This setup simulates a real corporate network structure,
-  focusing on **departmental isolation** and **secure access**.
-
----
-
+! End of configuration
+! Save with 'write memory'
