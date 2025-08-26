@@ -23,10 +23,10 @@ The main objective of this internship was to apply theoretical networking concep
 
 This repository is organized into the following directories:
 
-* [cite_start]**/report:** Contains the final internship report in both PDF and Markdown formats. [cite: 1]
-* [cite_start]**/configs:** Includes detailed configuration files for the hardware and software used in the lab. [cite: 1]
-* **/scripts:** Contains a Python script for network and service monitoring automation.
-* [cite_start]**/screenshots:** Includes various screenshots from the lab environment for visual reference. [cite: 2]
+* `report/`: Contains the final internship report in both PDF and Markdown formats.
+* `configs/`: Includes detailed configuration files for the hardware and software used in the lab.
+* `scripts/`: Contains a Python script for network and service monitoring automation.
+* `screenshots/`: Includes various screenshots from the lab environment for visual reference.
 
 ---
 
